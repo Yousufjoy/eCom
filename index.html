@@ -3,9 +3,811 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google Font  -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Work+Sans:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
     <title>Ecom!</title>
+
+    <!-- Daisy And TailwindCss CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      .font-works {
+        font-family: "Work Sans", sans-serif;
+      }
+    </style>
   </head>
-  <body>
-    <h1>This is the ecom website!!</h1>
+  <body class="font-works">
+    <!-- Hero Section Starts here -->
+    <section class="bg-[#F9F6E2]">
+      <div class="flex gap-40 mx-[250px]">
+        <div class="mt-[230px]">
+          <h3 class="text-[#111] text-center font-medium text-3xl pb-[50px]">
+            --Sale Fever--
+          </h3>
+          <h1 class="text-[#111] text-center font-bold text-5xl">
+            Purchase TK 200 or <br />
+            above & get
+            <span class="text-[#E527B2]">20% off</span>
+          </h1>
+          <div class="text-center pt-[60px] font-medium">
+            <span>Use Promo Code</span>
+            <div class="flex items-center justify-center mt-[10px]">
+              <div class="text-[#FFF] w-20 h-7 bg-[#E527B2] rounded-md">
+                <button class="pt-[2px]">Sell200</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div><img src="./images/Summer 1.png" alt="" /></div>
+      </div>
+    </section>
+    <!--- Product section starts-->
+
+    <!-- Kitchen appliances  -->
+    <section class="bg-[#F8F8F8]">
+      <h2 class="text-[#111] font-semibold text-4xl pl-[120px] pt-[100px]">
+        Kitchenware
+      </h2>
+      <div class="flex pl-[100px]">
+        <!-- Card 1 -->
+        <div>
+          <div class="card w-96 bg-base-100 shadow-xl ml-5 mt-[50px]">
+            <figure class="px-10 pt-10 lg:pt-[70px]">
+              <img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="pl-[130px]">
+              <div class="rating pt-6">
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+              </div>
+            </div>
+            <div class="card-body items-center text-center">
+              <h2
+                class="text-black card-title text-center text-24 font-semibold leading-normal"
+              >
+                K. Accessories
+              </h2>
+
+              <p
+                class="text-black text-opacity-60 text-center text-sm font-medium leading-normal pt-4"
+              >
+                39.00 Tk
+              </p>
+
+              <button
+                class="text-red-500 text-center text-[18px] font-bold leading-normal pt-4"
+                onclick="my_modal_1.showModal()"
+              >
+                Details
+              </button>
+              <dialog id="my_modal_1" class="modal">
+                <form method="dialog" class="modal-box">
+                  <div class="card w-96 ml-[-25px] lg:ml-[45px]">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="./images/prod1.png"
+                        alt="Shoes"
+                        class="rounded-xl"
+                      />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-black">Apple</h2>
+                      <p class="text-black">
+                        Professional employees are there for you to pick the
+                        most amazing and fresh fruits.
+                      </p>
+                      <div>
+                        <div class="rating pt-6">
+                          <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                          />
+                          <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                            checked
+                          />
+                          <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                          />
+                          <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                          />
+                          <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                          />
+                        </div>
+                      </div>
+                      <div class="card-actions">
+                        <button class="btn btn-white">Close</button>
+                        <button
+                          class="inline-flex p-3 justify-center items-center gap-10 rounded-lg bg-red-500"
+                        >
+                          Buy Now
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </dialog>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div>
+          <div class="card w-96 bg-base-100 shadow-xl ml-5 mt-[50px]">
+            <figure class="px-10 pt-10 lg:pt-[70px]">
+              <img src="./images/prod2.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="pl-[130px]">
+              <div class="rating pt-6">
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+              </div>
+            </div>
+            <div class="card-body items-center text-center">
+              <h2
+                class="text-black card-title text-center text-24 font-semibold leading-normal"
+              >
+                K. Accessories
+              </h2>
+
+              <p
+                class="text-black text-opacity-60 text-center text-sm font-medium leading-normal pt-4"
+              >
+                25.00 TK
+              </p>
+
+              <button
+                class="text-red-500 text-center text-[18px] font-bold leading-normal pt-4"
+                onclick="my_modal_1.showModal()"
+              >
+                Details
+              </button>
+              <dialog id="my_modal_1" class="modal">
+                <form method="dialog" class="modal-box">
+                  <div class="card w-96 ml-[-25px] lg:ml-[45px]">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="./images/prod1.png"
+                        alt="Shoes"
+                        class="rounded-xl"
+                      />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-black">Apple</h2>
+                      <p class="text-black">
+                        Professional employees are there for you to pick the
+                        most amazing and fresh fruits.
+                      </p>
+                      <div>
+                        <div class="rating pt-6">
+                          <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                          />
+                          <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                            checked
+                          />
+                          <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                          />
+                          <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                          />
+                          <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                          />
+                        </div>
+                      </div>
+                      <div class="card-actions">
+                        <button class="btn btn-white">Close</button>
+                        <button
+                          class="inline-flex p-3 justify-center items-center gap-10 rounded-lg bg-red-500"
+                        >
+                          Buy Now
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </dialog>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+
+        <div>
+          <div class="card w-96 bg-base-100 shadow-xl ml-5 mt-[50px]">
+            <figure class="px-10 pt-10 lg:pt-[70px]">
+              <img src="./images/prod3.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="pl-[130px]">
+              <div class="rating pt-6">
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+              </div>
+            </div>
+            <div class="card-body items-center text-center">
+              <h2
+                class="text-black card-title text-center text-24 font-semibold leading-normal"
+              >
+                Home Cooker
+              </h2>
+
+              <p
+                class="text-black text-opacity-60 text-center text-sm font-medium leading-normal pt-4"
+              >
+                49.00 Tk
+              </p>
+
+              <button
+                class="text-red-500 text-center text-[18px] font-bold leading-normal pt-4"
+                onclick="my_modal_1.showModal()"
+              >
+                Details
+              </button>
+              <dialog id="my_modal_1" class="modal">
+                <form method="dialog" class="modal-box">
+                  <div class="card w-96 ml-[-25px] lg:ml-[45px]">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="./images/prod1.png"
+                        alt="Shoes"
+                        class="rounded-xl"
+                      />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-black">Apple</h2>
+                      <p class="text-black">
+                        Professional employees are there for you to pick the
+                        most amazing and fresh fruits.
+                      </p>
+                      <div>
+                        <div class="rating pt-6">
+                          <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                          />
+                          <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                            checked
+                          />
+                          <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                          />
+                          <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                          />
+                          <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                          />
+                        </div>
+                      </div>
+                      <div class="card-actions">
+                        <button class="btn btn-white">Close</button>
+                        <button
+                          class="inline-flex p-3 justify-center items-center gap-10 rounded-lg bg-red-500"
+                        >
+                          Buy Now
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </dialog>
+            </div>
+          </div>
+        </div>
+        <!-- Product purchase Details -->
+        <div class="pl-[60px] mt-[60px]">
+          <div class="flex mt-[10px]">
+            <div class="w-342 h-148 flex-shrink-0 rounded-8 bg-white">
+              <input
+                type="text"
+                placeholder="Type here"
+                class="input input-bordered input-secondary w-full max-w-xs"
+              />
+            </div>
+            <div
+              class="text-[#FFF] w-[100px] h-[50px] flex-shrink-0 rounded-xl bg-[#E527B2] text-center font-semibold text-lg"
+            >
+              <button class="pt-[12px]">Apply!</button>
+            </div>
+          </div>
+          <div class="w-342 h-416 flex-shrink-0 rounded-md bg-white mt-[50px]">
+            <ul class="pt-[10px] pl-[10px] font-semibold">
+              <li>1. Home Cooker</li>
+              <li>2. Home Cooker</li>
+              <li>3. Home Cooker</li>
+            </ul>
+            <hr class="border-t border-gray-300 my-4" />
+
+            <div class="pt-[10px] pl-[10px]">
+              <span class="font-semibold">Total price:</span> 257.00TK <br />
+              <span class="font-semibold"> Discount : </span>51.40TK <br />
+              <span class="font-semibold">Total: </span> 205.60 TK
+            </div>
+            <hr class="border-t border-gray-300 my-4" />
+            <div
+              class="w-[294px] h-[56px] flex-shrink-0 rounded-8 bg-[#E527B2] text-white text-center font-semibold text-base rounded-md ml-[13px]"
+            >
+              <button class="pt-[15px]">Make Purchase</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sports wear  -->
+    <section class="bg-[#F8F8F8]">
+      <h2 class="text-[#111] font-semibold text-4xl pl-[120px] pt-[100px]">
+        Sportswear
+      </h2>
+      <div class="flex pl-[100px]">
+        <!-- Card 4 -->
+        <div>
+          <div class="card w-96 bg-base-100 shadow-xl ml-5 mt-[50px]">
+            <figure class="px-10 pt-10 lg:pt-[70px]">
+              <img src="./images/prod4.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="pl-[130px]">
+              <div class="rating pt-6">
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+              </div>
+            </div>
+            <div class="card-body items-center text-center">
+              <h2
+                class="text-black card-title text-center text-24 font-semibold leading-normal"
+              >
+                Sports Back Cap
+              </h2>
+
+              <p
+                class="text-black text-opacity-60 text-center text-sm font-medium leading-normal pt-4"
+              >
+                49.00 Tk
+              </p>
+
+              <button
+                class="text-red-500 text-center text-[18px] font-bold leading-normal pt-4"
+                onclick="my_modal_1.showModal()"
+              >
+                Details
+              </button>
+              <dialog id="my_modal_1" class="modal">
+                <form method="dialog" class="modal-box">
+                  <div class="card w-96 ml-[-25px] lg:ml-[45px]">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="./images/prod1.png"
+                        alt="Shoes"
+                        class="rounded-xl"
+                      />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-black">Apple</h2>
+                      <p class="text-black">
+                        Professional employees are there for you to pick the
+                        most amazing and fresh fruits.
+                      </p>
+                      <div>
+                        <div class="rating pt-6">
+                          <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                          />
+                          <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                            checked
+                          />
+                          <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                          />
+                          <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                          />
+                          <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                          />
+                        </div>
+                      </div>
+                      <div class="card-actions">
+                        <button class="btn btn-white">Close</button>
+                        <button
+                          class="inline-flex p-3 justify-center items-center gap-10 rounded-lg bg-red-500"
+                        >
+                          Buy Now
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </dialog>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div>
+          <div class="card w-96 bg-base-100 shadow-xl ml-5 mt-[50px]">
+            <figure class="px-10 pt-10 lg:pt-[70px]">
+              <img src="./images/prod5.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="pl-[130px]">
+              <div class="rating pt-6">
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+              </div>
+            </div>
+            <div class="card-body items-center text-center">
+              <h2
+                class="text-black card-title text-center text-24 font-semibold leading-normal"
+              >
+                Full Jersey Set
+              </h2>
+
+              <p
+                class="text-black text-opacity-60 text-center text-sm font-medium leading-normal pt-4"
+              >
+                69.00 Tk
+              </p>
+
+              <button
+                class="text-red-500 text-center text-[18px] font-bold leading-normal pt-4"
+                onclick="my_modal_1.showModal()"
+              >
+                Details
+              </button>
+              <dialog id="my_modal_1" class="modal">
+                <form method="dialog" class="modal-box">
+                  <div class="card w-96 ml-[-25px] lg:ml-[45px]">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="./images/prod1.png"
+                        alt="Shoes"
+                        class="rounded-xl"
+                      />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-black">Apple</h2>
+                      <p class="text-black">
+                        Professional employees are there for you to pick the
+                        most amazing and fresh fruits.
+                      </p>
+                      <div>
+                        <div class="rating pt-6">
+                          <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                          />
+                          <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                            checked
+                          />
+                          <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                          />
+                          <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                          />
+                          <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                          />
+                        </div>
+                      </div>
+                      <div class="card-actions">
+                        <button class="btn btn-white">Close</button>
+                        <button
+                          class="inline-flex p-3 justify-center items-center gap-10 rounded-lg bg-red-500"
+                        >
+                          Buy Now
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </dialog>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div>
+          <div class="card w-96 bg-base-100 shadow-xl ml-5 mt-[50px]">
+            <figure class="px-10 pt-10 lg:pt-[70px]">
+              <img src="./images/prod6.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="pl-[130px]">
+              <div class="rating pt-6">
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+              </div>
+            </div>
+            <div class="card-body items-center text-center">
+              <h2
+                class="text-black card-title text-center text-24 font-semibold leading-normal"
+              >
+                Sports cates
+              </h2>
+
+              <p
+                class="text-black text-opacity-60 text-center text-sm font-medium leading-normal pt-4"
+              >
+                159.00 Tk
+              </p>
+
+              <button
+                class="text-red-500 text-center text-[18px] font-bold leading-normal pt-4"
+                onclick="my_modal_1.showModal()"
+              >
+                Details
+              </button>
+              <dialog id="my_modal_1" class="modal">
+                <form method="dialog" class="modal-box">
+                  <div class="card w-96 ml-[-25px] lg:ml-[45px]">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="./images/prod1.png"
+                        alt="Shoes"
+                        class="rounded-xl"
+                      />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-black">Apple</h2>
+                      <p class="text-black">
+                        Professional employees are there for you to pick the
+                        most amazing and fresh fruits.
+                      </p>
+                      <div>
+                        <div class="rating pt-6">
+                          <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                          />
+                          <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                            checked
+                          />
+                          <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                          />
+                          <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                          />
+                          <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                          />
+                        </div>
+                      </div>
+                      <div class="card-actions">
+                        <button class="btn btn-white">Close</button>
+                        <button
+                          class="inline-flex p-3 justify-center items-center gap-10 rounded-lg bg-red-500"
+                        >
+                          Buy Now
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </dialog>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
