@@ -29,6 +29,7 @@ function calculate(fullPriceId, newValue) {
   const showTotal = document.getElementById("newTotal");
   showTotal.innerText = totalP;
 
+  // Here i'm applying the functionality for apply button if total > 200 then this will be executed!
   document.getElementById("apply-btn").addEventListener("click", function () {
     const couponInput = document.getElementById("coupon-confirm");
     // This portion of the code is for calculating discount calculation
@@ -47,8 +48,15 @@ function calculate(fullPriceId, newValue) {
       const newDiscount = document.getElementById("discountItem");
       newDiscount.innerText = "0.00"; // Reset the discount to zero
     }
-    couponInput.value = "";
   });
+
+  // Make the purchase button Enable and disable!!
+  const purchaseHistory = document.getElementById("purchase-btn");
+  if (newValue > 0) {
+    purchaseHistory.removeAttribute("disabled");
+  } else {
+    purchaseHistory.removeAttribute("disabled", true);
+  }
 }
 
 // // This function is for creating list of items!
