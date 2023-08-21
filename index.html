@@ -61,7 +61,7 @@
       </h2>
       <div class="flex pl-[100px]">
         <!-- Card 1 -->
-        <div>
+        <div id="card1">
           <div class="card w-96 bg-base-100 shadow-xl ml-5 mt-[50px]">
             <figure class="px-10 pt-10 lg:pt-[70px]">
               <img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
@@ -98,12 +98,14 @@
             </div>
             <div class="card-body items-center text-center">
               <h2
+                id="item1"
                 class="text-black card-title text-center text-24 font-semibold leading-normal"
               >
                 K. Accessories
               </h2>
 
               <p
+                id="card1-price"
                 class="text-black text-opacity-60 text-center text-sm font-medium leading-normal pt-4"
               >
                 39.00 Tk
@@ -178,7 +180,7 @@
         </div>
 
         <!-- Card 2 -->
-        <div>
+        <div id="card2">
           <div class="card w-96 bg-base-100 shadow-xl ml-5 mt-[50px]">
             <figure class="px-10 pt-10 lg:pt-[70px]">
               <img src="./images/prod2.png" alt="Shoes" class="rounded-xl" />
@@ -215,12 +217,14 @@
             </div>
             <div class="card-body items-center text-center">
               <h2
+                id="item2"
                 class="text-black card-title text-center text-24 font-semibold leading-normal"
               >
                 K. Accessories
               </h2>
 
               <p
+                id="card2-price"
                 class="text-black text-opacity-60 text-center text-sm font-medium leading-normal pt-4"
               >
                 25.00 TK
@@ -296,7 +300,7 @@
 
         <!-- Card 3 -->
 
-        <div>
+        <div id="card3">
           <div class="card w-96 bg-base-100 shadow-xl ml-5 mt-[50px]">
             <figure class="px-10 pt-10 lg:pt-[70px]">
               <img src="./images/prod3.png" alt="Shoes" class="rounded-xl" />
@@ -333,12 +337,14 @@
             </div>
             <div class="card-body items-center text-center">
               <h2
+                id="item3"
                 class="text-black card-title text-center text-24 font-semibold leading-normal"
               >
                 Home Cooker
               </h2>
 
               <p
+                id="card3-price"
                 class="text-black text-opacity-60 text-center text-sm font-medium leading-normal pt-4"
               >
                 49.00 Tk
@@ -424,21 +430,25 @@
             <div
               class="text-[#FFF] w-[100px] h-[50px] flex-shrink-0 rounded-xl bg-[#E527B2] text-center font-semibold text-lg"
             >
-              <button class="pt-[12px]">Apply!</button>
+              <button class="pt-[12px] disabled:opacity-50">Apply!</button>
             </div>
           </div>
-          <div class="w-342 h-416 flex-shrink-0 rounded-md bg-white mt-[50px]">
-            <ul class="pt-[10px] pl-[10px] font-semibold">
-              <li>1. Home Cooker</li>
-              <li>2. Home Cooker</li>
-              <li>3. Home Cooker</li>
-            </ul>
+          <div
+            class="w-342 h-416 flex-shrink-0 rounded-md bg-white mt-5 pl-[10px]"
+          >
+            <ol class="pt-2 pl-4 list-decimal">
+              <span id="selected-items"></span>
+            </ol>
             <hr class="border-t border-gray-300 my-4" />
 
             <div class="pt-[10px] pl-[10px]">
-              <span class="font-semibold">Total price:</span> 257.00TK <br />
-              <span class="font-semibold"> Discount : </span>51.40TK <br />
-              <span class="font-semibold">Total: </span> 205.60 TK
+              <span class="font-semibold">Total price:</span>
+              <span id="total-price">00</span>TK <br />
+              <span class="font-semibold"> Discount : </span
+              ><span id="discountItem"> 00</span>
+              <br />
+              <span class="font-semibold">Total: </span>
+              <span id="newTotal">00 </span> TK
             </div>
             <hr class="border-t border-gray-300 my-4" />
             <div
@@ -452,13 +462,13 @@
     </section>
 
     <!-- Sports wear  -->
-    <section class="bg-[#F8F8F8]">
+    <section class="bg-[#F8F8F8] mb-[60px]">
       <h2 class="text-[#111] font-semibold text-4xl pl-[120px] pt-[100px]">
         Sportswear
       </h2>
       <div class="flex pl-[100px]">
         <!-- Card 4 -->
-        <div>
+        <div id="card4">
           <div class="card w-96 bg-base-100 shadow-xl ml-5 mt-[50px]">
             <figure class="px-10 pt-10 lg:pt-[70px]">
               <img src="./images/prod4.png" alt="Shoes" class="rounded-xl" />
@@ -495,12 +505,14 @@
             </div>
             <div class="card-body items-center text-center">
               <h2
+                id="item4"
                 class="text-black card-title text-center text-24 font-semibold leading-normal"
               >
                 Sports Back Cap
               </h2>
 
               <p
+                id="card4-price"
                 class="text-black text-opacity-60 text-center text-sm font-medium leading-normal pt-4"
               >
                 49.00 Tk
@@ -575,7 +587,7 @@
         </div>
 
         <!-- Card 5 -->
-        <div>
+        <div id="card5">
           <div class="card w-96 bg-base-100 shadow-xl ml-5 mt-[50px]">
             <figure class="px-10 pt-10 lg:pt-[70px]">
               <img src="./images/prod5.png" alt="Shoes" class="rounded-xl" />
@@ -612,12 +624,14 @@
             </div>
             <div class="card-body items-center text-center">
               <h2
+                id="item5"
                 class="text-black card-title text-center text-24 font-semibold leading-normal"
               >
                 Full Jersey Set
               </h2>
 
               <p
+                id="card5-price"
                 class="text-black text-opacity-60 text-center text-sm font-medium leading-normal pt-4"
               >
                 69.00 Tk
@@ -692,7 +706,7 @@
         </div>
 
         <!-- Card 6 -->
-        <div>
+        <div id="card6">
           <div class="card w-96 bg-base-100 shadow-xl ml-5 mt-[50px]">
             <figure class="px-10 pt-10 lg:pt-[70px]">
               <img src="./images/prod6.png" alt="Shoes" class="rounded-xl" />
@@ -729,12 +743,14 @@
             </div>
             <div class="card-body items-center text-center">
               <h2
+                id="item6"
                 class="text-black card-title text-center text-24 font-semibold leading-normal"
               >
                 Sports cates
               </h2>
 
               <p
+                id="card6-price"
                 class="text-black text-opacity-60 text-center text-sm font-medium leading-normal pt-4"
               >
                 159.00 Tk
@@ -809,5 +825,10 @@
         </div>
       </div>
     </section>
+    <!-- 
+    JS CONNECTION  -->
+
+    <script src="./js/price.js"></script>
+    <script src="./js/functionality.js"></script>
   </body>
 </html>
