@@ -89,3 +89,7 @@ document
   });
 
 // Appy button functionality
+
+document.getElementById("purchase-btn").addEventListener("click", function () {
+  "Clicked!";
+});

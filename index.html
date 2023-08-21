@@ -267,6 +267,7 @@
               class="w-[294px] h-[56px] flex-shrink-0 rounded-8 bg-[#E527B2] text-white text-center font-semibold text-base rounded-md ml-[13px]"
             >
               <button
+                onclick="my_modal_1.showModal()"
                 id="purchase-btn"
                 class="pt-[15px] disabled:opacity-50"
                 disabled
@@ -278,6 +279,30 @@
         </div>
       </div>
     </section>
+
+    <!-- Modal section  -->
+
+    <dialog id="my_modal_1" class="modal">
+      <form method="dialog" class="modal-box">
+        <div class="card w-96 ml-[-25px] lg:ml-[45px]">
+          <figure class="px-10 pt-10">
+            <img src="./images/congo.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-black">Congratulations!</h2>
+            <p class="text-black">You Purchased The Product!</p>
+
+            <div class="card-actions">
+              <button
+                class="inline-flex p-3 justify-center items-center gap-10 rounded-lg bg-[#E527B2] text-[#FFF]"
+              >
+                Go Back!
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </dialog>
 
     <!-- Sports wear  -->
     <section class="bg-[#F8F8F8] mb-[60px]">
@@ -448,6 +473,7 @@
         </div>
       </div>
     </section>
+
     <!-- 
     JS Scripts  -->
 
