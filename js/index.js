@@ -88,8 +88,15 @@ document
     }
   });
 
-// Appy button functionality
+// GoBack button functionality When modal button go back clicks these variables are resets!
+document.getElementById("go-back").addEventListener("click", function () {
+  const totalP = document.getElementById("total-price");
+  const discountP = document.getElementById("discountItem");
+  const selectedItemsElement = document.getElementById("selected-items");
 
-document.getElementById("purchase-btn").addEventListener("click", function () {
-  "Clicked!";
+  selectedItemsElement.innerHTML = ""; // Clears the list
+
+  newTotal.innerText = "0.0"; // Sets the total price to 0
+  totalP.innerText = "0.0"; // Sets total to 0
+  discountP.innerText = "0.0"; // sets discount to 0
 });
