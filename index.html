@@ -43,7 +43,7 @@
             <span>Use Promo Code</span>
             <div class="flex items-center justify-center mt-[10px]">
               <div class="text-[#FFF] w-20 h-7 bg-[#E527B2] rounded-md">
-                <button class="pt-[2px]">Sell200</button>
+                <button class="pt-[2px]">SELL200</button>
               </div>
             </div>
           </div>
@@ -422,6 +422,7 @@
           <div class="flex mt-[10px]">
             <div class="w-342 h-148 flex-shrink-0 rounded-8 bg-white">
               <input
+                id="coupon-confirm"
                 type="text"
                 placeholder="Type here"
                 class="input input-bordered input-secondary w-full max-w-xs"
@@ -430,7 +431,13 @@
             <div
               class="text-[#FFF] w-[100px] h-[50px] flex-shrink-0 rounded-xl bg-[#E527B2] text-center font-semibold text-lg"
             >
-              <button class="pt-[12px] disabled:opacity-50">Apply!</button>
+              <button
+                id="apply-btn"
+                class="pt-[12px] disabled:opacity-50"
+                disabled
+              >
+                Apply!
+              </button>
             </div>
           </div>
           <div
@@ -826,9 +833,9 @@
       </div>
     </section>
     <!-- 
-    JS CONNECTION  -->
+    JS Scripts  -->
 
-    <script src="./js/price.js"></script>
+    <script src="./js/index.js"></script>
     <script src="./js/functionality.js"></script>
   </body>
 </html>

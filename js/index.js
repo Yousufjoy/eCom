@@ -73,3 +73,19 @@ document.getElementById("card6").addEventListener("click", function () {
 });
 
 //This code is for Calculatin total Ends
+
+// Coupon button enable and disable
+document
+  .getElementById("coupon-confirm")
+  .addEventListener("keyup", function (event) {
+    const userCoupon = event.target.value;
+    const applyBtn = document.getElementById("apply-btn");
+
+    if (userCoupon === "SELL200") {
+      applyBtn.removeAttribute("disabled");
+    } else {
+      applyBtn.setAttribute("disabled", true);
+    }
+  });
+
+// Appy button functionality
