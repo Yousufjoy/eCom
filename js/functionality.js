@@ -59,7 +59,7 @@ function calculate(fullPriceId, newValue) {
   }
 }
 
-// // This function is for creating list of items!
+// This function is for creating list of items!
 function addItems(firstId, secondId) {
   const selectedItems = document.getElementById(firstId);
   const item = document.getElementById(secondId);
